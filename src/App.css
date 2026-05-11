@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  background: #020617;
+  font-family: sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.title {
+  font-size: 55px;
+  color: cyan;
+  text-shadow: 0 0 20px cyan;
+  margin-bottom: 20px;
+}
+
+.scoreboard {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.status {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #cbd5e1;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 110px);
+  gap: 12px;
+}
+
+.cell {
+  width: 110px;
+  height: 110px;
+  background: #0f172a;
+  border: 2px solid cyan;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 12px rgba(0,255,255,0.3);
+}
+
+.cell:hover {
+  transform: scale(1.06);
+  background: #1e293b;
+}
+
+.cell.X {
+  color: #38bdf8;
+  text-shadow: 0 0 15px #38bdf8;
+}
+
+.cell.O {
+  color: #f472b6;
+  text-shadow: 0 0 15px #f472b6;
+}
+
+.restart {
+  margin-top: 25px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 12px;
+  background: cyan;
+  color: black;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.restart:hover {
+  transform: scale(1.08);
+}
